@@ -83,32 +83,34 @@
 
     <!-- breadcrumb_area end  -->
 
-      <!-- .services area start  -->
-      <div class="service_area custom_animation mb-60 mobile-res-mb pt-50">
-        <div class="service_shapes">
-          <img
-            src="<?php echo $directory;?>/assets/img/shapes/service_right.png"
-            class="position-absolute service_01"
-            alt="service_shapes"
-          />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-                <h1>Title: <?=the_title();?></h1>
-                <H6>Author: <?=the_author();?></H6>
-                <img src="<?=$imagepath[0]?>" alt="<?=$imagepath?>" width="50%">
-                <p class="light_color">
-                    Excerpt: <?=the_excerpt();?>
-                </p>
-                <p><?=the_content();?></p>
-                <p>Date: <?=the_date();?></p>
-            </div>
-            <?=comment_form();?>
+    <!-- .services area start -->
+    <div class="service_area custom_animation mb-60 mobile-res-mb pt-50">
+      <!-- Your service area code here -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Title: <?= the_title(); ?></h1>
+            <H6>Author: <?= the_author(); ?></H6>
+            <img src="<?= $imagepath[0] ?>" alt="<?= $imagepath[0] ?>" width="50%">
+            <p class="light_color">
+              Excerpt: <?= the_excerpt(); ?>
+            </p>
+            <p><?= the_content(); ?></p>
+            <p>Date: <?= the_date(); ?></p>
+
+            <!-- Display Comments -->
+            <?php
+            // if (comments_open() || get_comments_number()) {
+            //   comments_template();
+            // }
+            // display comment form
+            comment_form();
+            ?>
           </div>
         </div>
       </div>
-      <!-- .services area end  -->
+    </div>
+    <!-- .services area end -->
 
 
       <!-- footer area start  -->

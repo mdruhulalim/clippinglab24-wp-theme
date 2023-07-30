@@ -1,14 +1,14 @@
-<?php
-// Template Name:Portfolio
-  get_header();
-  $directory = get_template_directory_uri();
-?>
-<!-- HEADER AREA END   -->
+    <?php
+    // Template Name:portfolio
+      get_header();
+      $directory = get_template_directory_uri();
+    ?>
+    <!-- HEADER AREA END   -->
 
     <div class="sidebar">
       <div class="wrap d-flex">
         <div class="logo mb-30">
-          <img src="<?php echo $directory;?>/<?php echo $directory;?>/assets/img/slide/whitelogo.png" alt="" />
+          <img src="<?=$directory;?>/assets/img/slide/whitelogo.png" alt="" />
         </div>
         <div class="close_btn_sidebar">
           <span class="searchClose sidebarClose">
@@ -32,19 +32,19 @@
         <div class="project_slider text-center">
           <div class="project_activitionn">
             <div class="project_items">
-              <img src="<?php echo $directory;?>/assets/img/home_two_ass/projects/p1.png" alt="" />
+              <img src="<?=$directory;?>/assets/img/home_two_ass/projects/p1.png" alt="" />
             </div>
             <div class="project_items">
-              <img src="<?php echo $directory;?>/assets/img/home_two_ass/projects/p3.png" alt="" />
+              <img src="<?=$directory;?>/assets/img/home_two_ass/projects/p3.png" alt="" />
             </div>
             <div class="project_items">
-              <img src="<?php echo $directory;?>/assets/img/home_two_ass/projects/p1.png" alt="" />
+              <img src="<?=$directory;?>/assets/img/home_two_ass/projects/p1.png" alt="" />
             </div>
             <div class="project_items">
-              <img src="<?php echo $directory;?>/assets/img/home_two_ass/projects/p3.png" alt="" />
+              <img src="<?=$directory;?>/assets/img/home_two_ass/projects/p3.png" alt="" />
             </div>
             <div class="project_items">
-              <img src="<?php echo $directory;?>/assets/img/home_two_ass/projects/p1.png" alt="" />
+              <img src="<?=$directory;?>/assets/img/home_two_ass/projects/p1.png" alt="" />
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
         <h4 class="contact-title mb-20">contact us</h4>
         <ul class="inline_list">
           <li>
-            <img src="<?php echo $directory;?>/assets/img/slide/mailblue.png" alt="" /><a
+            <img src="<?=$directory;?>/assets/img/slide/mailblue.png" alt="" /><a
               href="https://themeim.com/cdn-cgi/l/email-protection"
               class="__cf_email__"
               data-cfemail="d4bdbab2bbfab7b8bda4b1a694b1b9b5bdb8fab7bbb9"
@@ -62,7 +62,7 @@
             >
           </li>
           <li>
-            <img src="<?php echo $directory;?>/assets/img/slide/phonblue.png" alt="" />+1 225 365 03
+            <img src="<?=$directory;?>/assets/img/slide/phonblue.png" alt="" />+1 225 365 03
           </li>
         </ul>
         <div class="social_link pt-20 mb-20">
@@ -90,8 +90,8 @@
         <div class="row align-items-center justify-content-between">
           <div class="col-2">
             <div class="mobile-logo">
-              <a href="<?=site_url();?>"
-                ><img src="<?php echo $directory;?>/assets/img/logo/logo.png" alt=""
+              <a href="index.html"
+                ><img src="<?=$directory;?>/assets/img/logo/logo.png" alt=""
               /></a>
             </div>
           </div>
@@ -113,8 +113,8 @@
         <button class="side-info-close"><i class="fal fa-times"></i></button>
 
         <div class="side__logo mb-25">
-          <a href="<?=site_url();?>">
-            <img src="<?php echo $directory;?>/assets/img/logo/log.png" alt="logo" />
+          <a href="index.html">
+            <img src="<?=$directory;?>/assets/img/logo/log.png" alt="logo" />
           </a>
         </div>
         <div class="mobile-menu"></div>
@@ -162,52 +162,52 @@
       <div class="breadcrumb-shapes">
         <img
           class="shape_01 position-absolute"
-          src="<?php echo $directory;?>/assets/img/slide/sl-1.png"
+          src="<?=$directory;?>/assets/img/slide/sl-1.png"
           alt="shape_01"
         />
         <img
           class="shape_02 position-absolute"
-          src="<?php echo $directory;?>/assets/img/slide/sl-2.png"
+          src="<?=$directory;?>/assets/img/slide/sl-2.png"
           alt="shape_02"
         />
         <img
           class="shape_03 position-absolute"
-          src="<?php echo $directory;?>/assets/img/slide/sl-3.png"
+          src="<?=$directory;?>/assets/img/slide/sl-3.png"
           alt="shape_03"
         />
         <img
           class="shape_04 position-absolute"
-          src="<?php echo $directory;?>/assets/img/slide/sl-4.png"
+          src="<?=$directory;?>/assets/img/slide/sl-4.png"
           alt="shape_04"
         />
         <img
           class="shape_05 position-absolute"
-          src="<?php echo $directory;?>/assets/img/slide/sl-5.png"
+          src="<?=$directory;?>/assets/img/slide/sl-5.png"
           alt="shape_05"
         />
         <img
           class="shape_06 position-absolute"
-          src="<?php echo $directory;?>/assets/img/slide/sl-6.png"
+          src="<?=$directory;?>/assets/img/slide/sl-6.png"
           alt="shape_06"
         />
         <img
           class="shape_07 position-absolute"
-          src="<?php echo $directory;?>/assets/img/slide/sl-7.png"
+          src="<?=$directory;?>/assets/img/slide/sl-7.png"
           alt="shape_07"
         />
         <img
           class="bc-01 position-absolute"
-          src="<?php echo $directory;?>/assets/img/about/breadcrumb/bread.png"
+          src="<?=$directory;?>/assets/img/about/breadcrumb/bread.png"
           alt="shape_07"
         />
         <img
           class="shape_10 position-absolute"
-          src="<?php echo $directory;?>/assets/img/shapes/header_left.png"
+          src="<?=$directory;?>/assets/img/shapes/header_left.png"
           alt="shape_10"
         />
         <img
           class="shape_11 position-absolute"
-          src="<?php echo $directory;?>/assets/img/shapes/header_middle.png"
+          src="<?=$directory;?>/assets/img/shapes/header_middle.png"
           alt="shape_11"
         />
       </div>
@@ -241,7 +241,7 @@
               class="button-group filtering_btn filter-button-group text-center"
             >
               <button data-filter="*">All</button>
-              <button data-filter=".metal">Multi-clipping Path</button>
+              <!-- <button data-filter=".metal">Multi-clipping Path</button>
               <button data-filter=".transition">Background Removal</button>
               <button data-filter=".alkali, .alkaline-earth">
                 Shadow making
@@ -249,182 +249,48 @@
               <button data-filter=":not(.transition)">Image Retouch</button>
               <button data-filter=".metal:not(.transition)">
                 Clipping Path
-              </button>
+              </button> -->
             </div>
             <div class="fd pt-10">
               <div class="grid">
+                <?php
+                // find portfolio data
+                  $wp_portfolio = array(
+                    'post_type'=>'port',
+                    'post_status'=>'publish'
+                  );
+                  // query
+                  $wp_query = new Wp_Query($wp_portfolio);
+                  // while loop
+                  while($wp_query->have_posts()){
+                    $wp_query->the_post();
+                    // get image path
+                    $imagepath = wp_get_attachment_image_src(
+                      get_post_thumbnail_id(),'large'
+                  );
+                ?>
                 <div class="grid-item metal">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_01.png" class="portfolio">
+                  <a href="<?=$directory;?>/assets/img/portfolio/items_01.png" class="portfolio">
                     <img
                       class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_01.png"
-                      alt=""
+                      src="<?=$imagepath[0];?>"
+                      alt="<?=$imagepath[0];?>"
+                      width="50%"
                     />
                   </a>
                   <div class="portfolio_content">
                     <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
+                    <h5><?=the_excerpt();?></h5>
                     <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
+                      <a href="<?=the_permalink();?>"
+                        ><?=the_title();?></a
                       >
                     </h3>
                   </div>
                 </div>
-                <div class="grid-item alkaline-earth">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_02.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_02.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-                <div class="grid-item metal transition">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_03.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_03.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-                <div class="grid-item alkaline-earth">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_04.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_04.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-                <div class="grid-item transition">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_05.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_05.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-                <div class="grid-item metal">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_06.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_06.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-                <div class="grid-item transition">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_07.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_09.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-                <div class="grid-item alkaline-earth">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_08.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_08.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
-                <div class="grid-item">
-                  <a href="<?php echo $directory;?>/assets/img/portfolio/items_09.png" class="portfolio">
-                    <img
-                      class="portfolio"
-                      src="<?php echo $directory;?>/assets/img/portfolio/items_07.png"
-                      alt=""
-                    />
-                  </a>
-                  <div class="portfolio_content">
-                    <button class="plus"><i class="fal fa-plus"></i></button>
-                    <h5>DESIGN</h5>
-                    <h3>
-                      <a href="portfolio-details.html"
-                        >Producing Ideas Is The Main <br />
-                        Way To Grow</a
-                      >
-                    </h3>
-                  </div>
-                </div>
+                <?php } ?>
               </div>
+              <?=wp_pagenavi();?>
             </div>
           </div>
         </div>

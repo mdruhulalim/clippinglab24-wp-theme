@@ -7,7 +7,7 @@ $logoimage = get_header_image();
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Cliper - Cliper Photo Studio HTML5 Template</title>
+    <title><?php bloginfo('name');?><?php wp_title();?><?php if(is_front_page()){echo ' | ',bloginfo('description');} ?></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="https://themeim.com/" />
@@ -26,6 +26,7 @@ $logoimage = get_header_image();
     <link rel="stylesheet" href="<?php echo $directory;?>/assets/css/slick.css" />
     <link rel="stylesheet" href="<?php echo $directory;?>/assets/css/twentytwenty.css" />
     <link rel="stylesheet" href="<?php echo $directory;?>/assets/css/style.css" />
+    <!-- for calling plugin css -->
     <?=wp_head();?>
     <link rel="stylesheet" href="<?php echo $directory;?>/assets/css/responsive.css" />
   </head>

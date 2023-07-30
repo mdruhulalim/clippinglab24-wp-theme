@@ -521,4 +521,5 @@
 
   <!-- Mirrored from themeim.com/demo/cliper/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Jun 2023 13:45:53 GMT -->
 </html>
+<!-- for calling plugin js -->
 <?=wp_footer();?>
