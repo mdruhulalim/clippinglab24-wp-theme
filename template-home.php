@@ -2,6 +2,8 @@
 // Template Name:Home
   get_header();
   $directory = get_template_directory_uri();
+  // for codestar framework
+  $codestar = get_option('clippinglab');
 ?>
 <!-- HEADER AREA END   -->
 
@@ -263,8 +265,7 @@
                   data-delay="2s"
                   data-wow-duration="2s"
                 >
-                  Photo
-                  <span>Editing Company</span>
+                  <?=$codestar['hs1-top-text']?>
                 </h4>
                 <h2
                   class="wow animate__fadeIn"
@@ -272,7 +273,7 @@
                   data-delay="2.5s"
                   data-wow-duration="2.5s"
                 >
-                  Professional Clipping Path & Photo Editing Service
+                <?=$codestar['hs1-header']?>
                 </h2>
                 <p
                   class="wow animate__fadeIn"
@@ -280,17 +281,14 @@
                   data-delay="3s"
                   data-wow-duration="3s"
                 >
-                  We provide 100% handmade photo editing services to use
-                  Photoshop. So you <br />
-                  will get great quality services. always try to deliver your
-                  order within 24 hours or less.
+                  <?=$codestar['hs1-sub-heading']?>
                 </p>
                 <div class="site_button site_button-two">
-                  <a class="cmn_btn slide_btn slide_btn_01" href="login.html"
-                    >Free Trail <i class="fas fa-chevron-right"></i
+                  <a class="cmn_btn slide_btn slide_btn_01" href="<?=$codestar['hs1-button-one-link']?>"
+                    ><?=$codestar['hs1-button-one-text']?> <i class="fas fa-chevron-right"></i
                   ></a>
-                  <a class="cmn_btn cmn_outline" href="customQuote.html"
-                    ><span>Make A Budget</span
+                  <a class="cmn_btn cmn_outline" href="<?=$codestar['hs1-button-two-link']?>"
+                    ><span><?=$codestar['hs1-button-two-text']?></span
                     ><i class="fas fa-chevron-right"></i>
                   </a>
                 </div>
@@ -299,29 +297,29 @@
             <div class="col-md-12 col-lg-4 col-xl-5 offset-xl-1 text-end">
               <div class="slide_img beforelsiee DisplayNone">
                 <img
-                  src="<?php echo $directory;?>/assets/img/slide/slide_main.png"
+                  src="<?=$codestar['hs1-image']['url']?>"
                   class="img-1"
-                  alt="slide_shape_01"
+                  alt="<?=$codestar['hs1-image']['alt']?>"
                 />
                 <img
-                  src="<?php echo $directory;?>/assets/img/slide/p1.png"
+                  src="<?=$codestar['hs1-p1']['url']?>"
                   class="img-2 position-absolute"
-                  alt="slide_shape_02"
+                  alt="<?=$codestar['hs1-p1']['alt']?>"
                 />
                 <img
-                  src="<?php echo $directory;?>/assets/img/slide/p2.png"
+                  src="<?=$codestar['hs1-p2']['url']?>"
                   class="img-3 position-absolute"
-                  alt="slide_shape_03"
+                  alt="<?=$codestar['hs1-p2']['alt']?>"
                 />
                 <img
-                  src="<?php echo $directory;?>/assets/img/slide/p3.png"
+                  src="<?=$codestar['hs1-p3']['url']?>"
                   class="img-4 position-absolute"
-                  alt="slide_shape_04"
+                  alt="<?=$codestar['hs1-p3']['alt']?>"
                 />
                 <img
-                  src="<?php echo $directory;?>/assets/img/slide/p4.png"
+                  src="<?=$codestar['hs1-p4']['url']?>"
                   class="img-5 position-absolute"
-                  alt="slide_image"
+                  alt="<?=$codestar['hs1-p4']['alt']?>"
                 />
               </div>
             </div>
@@ -361,8 +359,8 @@
                 <div class="about_image_1">
                   <img
                     class="about_shape_one"
-                    src="<?php echo $directory;?>/assets/img/about/about_since.png"
-                    alt="about_shape_01"
+                    src="<?=$codestar['hs2-p1']['url']?>"
+                    alt="<?=$codestar['hs2-p1']['alt']?>"
                   />
                   <img
                     class="about_shape_two"
@@ -383,10 +381,10 @@
                   />
                   <img
                     class="about_img_two"
-                    src="<?php echo $directory;?>/assets/img/about/team.png"
-                    alt="about_image_02"
+                    src="<?=$codestar['hs2-image']['url']?>"
+                    alt="<?=$codestar['hs2-image']['alt']?>"
                   />
-                  <p class="rotate">SINCE 1980.</p>
+                  <p class="rotate"><?=$codestar['hs2-since-text']?></p>
                 </div>
               </div>
             </div>
@@ -398,33 +396,28 @@
                     data-animation="fadeInUp"
                     data-delay="1s"
                   >
-                    Why Choos Us
+                    <?=$codestar['hs2-top-text']?>
                   </h4>
                   <h2
                     class="title wow animate__bounceInn"
                     data-animation="fadeInUp"
                     data-delay="1.5s"
                   >
-                    We’re your virtual photo editing & design studio
+                    <?=$codestar['hs2-heading']?>
                   </h2>
                 </div>
                 <div class="about_content">
                   <h3>
-                    Image editing services for ecommerce businesses and pros,
-                    from product photographers to Amazon sellers to global
-                    brands.
+                    <?=$codestar['hs2-heading-two']?>
                   </h3>
                   <p>
-                    Because a quick product shoot can easily turn into a week or
-                    more of editing and formatting your images. Let us look
-                    after the edits, so you can get back to the work that needs
-                    you.
+                    <?=$codestar['hs2-sub-heading']?>
                   </p>
                   <div class="site_button">
                     <a
                       class="cmn_btn cmn_outline cmn_outline_two"
-                      href="customQuote.html"
-                      ><span>Read more</span>
+                      href="<?=$codestar['hs2-button-link']?>"
+                      ><span><?=$codestar['hs2-button-text']?></span>
                       <i class="fas fa-chevron-right"></i
                     ></a>
                   </div>

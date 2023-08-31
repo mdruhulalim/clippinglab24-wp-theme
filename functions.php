@@ -30,5 +30,11 @@
         add_theme_support('comments');
     }
     add_action('after_setup_theme', 'theme_setup');
+
+
+    // for codestar-framework
+    require_once('inc/codestar-framework/codestar-framework.php');
+    // require_once('inc/codestar-framework/samples/admin-options.php');
+    require_once('inc/codestar-framework/options.php');
     
 ?>

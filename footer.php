@@ -1,5 +1,9 @@
 <?php
     $directory = get_template_directory_uri();
+    // for codestar framework
+    $codestar = get_option('clippinglab');
+    // var_dump($codestar);
+    // echo $codestar['Copywrite'];
 ?>
 <div class="footer_area">
         <div class="footer_shape">
@@ -476,14 +480,15 @@
             <div class="col-md-4 col-lg-3 col-xl-4 col-sm-6">
               <div class="copyright_text">
                 <p>
-                  &copy; 2023 <span>clippinglab24</span>. All Rights Reserved.
+                  <!-- &copy; 2023 <span>clippinglab24</span>. All Rights Reserved. -->
+                  <?=$codestar['Copywrite']?>
                 </p>
               </div>
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 col-sm-6 text-center"></div>
             <div class="col-md-4 col-lg-3 col-xl-4">
               <div class="copyright_menu">
-                <p>Made With ❤ by Deelko</p>
+                <p><?=$codestar['developer-link']?></a></p>
               </div>
             </div>
           </div>
